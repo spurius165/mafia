@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="Mafia.NightForNoMafiaPage">
+	<AbsoluteLayout VerticalOptions="FillAndExpand"
+                    HorizontalOptions="FillAndExpand">
+		 <Image AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+            Source="night.png" Aspect="AspectFill"/>
+		<ScrollView  AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0, 0, 1, 1">
+			<StackLayout Margin="25,100,25,0">
+				<Label Text="Тыкай по экрану, а то все поймут, что ты мирный житель." 
+					TextColor="#ecd5bc"
+					FontFamily="PFHandbookPro-Regular.ttf#PF Handbook Pro"
+					FontSize="24" Margin="0, 0, 0, 15" 
+					HorizontalOptions="Center"/>
+			</StackLayout>
+		</ScrollView>
+	</AbsoluteLayout>
+</ContentPage>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="Mafia.NightResultAdminPage">
+	<ContentPage.Content>
+		<AbsoluteLayout VerticalOptions="FillAndExpand"
+                    HorizontalOptions="FillAndExpand">
+				<Image AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+            			Source="night.png" Aspect="AspectFill"/>
+					<ScrollView  AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0, 0, 1, 1">
+						<StackLayout Margin="0,40,0,0"
+							VerticalOptions="Start">
+							<Label Text="УБИТ:" 
+									TextColor="#ecd5bc" 
+									FontFamily="LineaturaRegular.ttf#Lineatura"
+									FontSize="28" 
+									HorizontalTextAlignment="Center" 
+									Margin="0, 0, 0, 40"/>
+							<Label x:Name="Dead" 
+									TextColor="#679FD2" 
+									FontFamily="PFHandbookPro-Regular.ttf#PF Handbook Pro"
+									FontSize="26" 
+									HorizontalTextAlignment="Center" 
+									Margin="0, 0, 0, 0" />
+							<Button Text="День" 
+									Command="{Binding StartPlay}" 
+									HorizontalOptions="FillAndExpand" 
+									VerticalOptions="End"
+									BackgroundColor="#20242d" 
+									TextColor="#ecd5bc"
+									FontFamily="akrobat.ttf#Akrobat"
+									FontSize="24"
+									WidthRequest="220"
+									HeightRequest="60"
+									Margin="10, 320, 10, 20"/>
+						</StackLayout>
+					</ScrollView>
+		</AbsoluteLayout>
+	</ContentPage.Content>
+</ContentPage>

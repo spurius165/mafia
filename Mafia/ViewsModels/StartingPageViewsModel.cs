@@ -1,0 +1,3 @@
+﻿using System; using System.Windows.Input; using Xamarin.Forms;  namespace Mafia { 	public class StartingPageViewsModel 	{ 		public ICommand CreateRoom { get; set; } 		public ICommand FindRoom { get; set; }  		private Page _page;  		public StartingPageViewsModel(Page page) 		{ 			_page = page; 			CreateRoom = new Command(OpenCreateRoom); 			FindRoom = new Command(OpenListofRooms); 		}  		public StartingPageViewsModel() 		{ 		}  		private async void OpenListofRooms() 		{ 			await _page.Navigation.PushAsync(new RoomPage()); 		}  		private async void OpenCreateRoom() 		{
+
+			await _page.Navigation.PushAsync(new CreateRoom()); 		}  	} }  

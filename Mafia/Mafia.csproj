@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{37B82BC3-F767-4C90-8985-DF0009AA5751}</ProjectGuid>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <UseMSBuildEngine>true</UseMSBuildEngine>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Mafia</RootNamespace>
+    <AssemblyName>Mafia</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="App.xaml" />
+    <EmbeddedResource Include="MafiaPage.xaml" />
+    <EmbeddedResource Include="Views\StartingPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CreateRoom.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\RoomPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\StartGameAdminPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\LoginPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\StartGameUserPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CardBackPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CardPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DayPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DayResultPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DayResultAdminPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DayWaiting.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DayResultDeadPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\NightPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\NightWaiting.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\NightResultPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\NightResultDeadPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\NightResultAdminPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\NightForNoMafiaPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MirWinPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MafiaWinPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MirWinDeadPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MafiaWinDeadPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MafiaPage.xaml.cs">
+      <DependentUpon>MafiaPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\StartingPage.xaml.cs">
+      <DependentUpon>StartingPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CreateRoom.xaml.cs">
+      <DependentUpon>CreateRoom.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewsModels\CreateRoomViewsModel.cs" />
+    <Compile Include="ViewsModels\StartingPageViewsModel.cs" />
+    <Compile Include="Views\RoomPage.xaml.cs">
+      <DependentUpon>RoomPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewsModels\RoomViewsModel.cs" />
+    <Compile Include="Models\RoomModel.cs" />
+    <Compile Include="DataServices\DataService.cs" />
+    <Compile Include="DataServices\GameService.cs" />
+    <Compile Include="DataServices\IGameService.cs" />
+    <Compile Include="Models\Message.cs" />
+    <Compile Include="Models\MessageType.cs" />
+    <Compile Include="Views\StartGameAdminPage.xaml.cs">
+      <DependentUpon>StartGameAdminPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewsModels\StartGameAdminViewsModel.cs" />
+    <Compile Include="Models\StartGameAdminModel.cs" />
+    <Compile Include="Views\LoginPage.xaml.cs">
+      <DependentUpon>LoginPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\StartGameUserPage.xaml.cs">
+      <DependentUpon>StartGameUserPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewsModels\StartGameUserViewsModel.cs" />
+    <Compile Include="Models\StartGameUserModel.cs" />
+    <Compile Include="ViewsModels\LoginPageViewsModel.cs" />
+    <Compile Include="Views\CardBackPage.xaml.cs">
+      <DependentUpon>CardBackPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewsModels\CardBackViewsModel.cs" />
+    <Compile Include="Views\CardPage.xaml.cs">
+      <DependentUpon>CardPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewsModels\CardViewsModel.cs" />
+    <Compile Include="Views\DayPage.xaml.cs">
+      <DependentUpon>DayPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewsModels\DayViewsModel.cs" />
+    <Compile Include="Models\DayModel.cs" />
+    <Compile Include="Views\DayResultPage.xaml.cs">
+      <DependentUpon>DayResultPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DayResultAdminPage.xaml.cs">
+      <DependentUpon>DayResultAdminPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewsModels\DayResultViewsModel.cs" />
+    <Compile Include="Views\DayWaiting.xaml.cs">
+      <DependentUpon>DayWaiting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewsModels\DayWaitingViewsModel.cs" />
+    <Compile Include="Views\DayResultDeadPage.xaml.cs">
+      <DependentUpon>DayResultDeadPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewsModels\DayResultAdminViewsModel.cs" />
+    <Compile Include="ViewsModels\DayResultDeadViewsModel.cs" />
+    <Compile Include="Views\NightPage.xaml.cs">
+      <DependentUpon>NightPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewsModels\NightViewsModel.cs" />
+    <Compile Include="Models\NightModel.cs" />
+    <Compile Include="Views\NightWaiting.xaml.cs">
+      <DependentUpon>NightWaiting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewsModels\NightWaitingViewsModel.cs" />
+    <Compile Include="Views\NightResultPage.xaml.cs">
+      <DependentUpon>NightResultPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewsModels\NightResultViewsModel.cs" />
+    <Compile Include="Views\NightResultDeadPage.xaml.cs">
+      <DependentUpon>NightResultDeadPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewsModels\NightResultDeadViewsModel.cs" />
+    <Compile Include="Views\NightResultAdminPage.xaml.cs">
+      <DependentUpon>NightResultAdminPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewsModels\NightResultAdminViewsModel.cs" />
+    <Compile Include="Views\NightForNoMafiaPage.xaml.cs">
+      <DependentUpon>NightForNoMafiaPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewsModels\NightForNoMafiaViewsModel.cs" />
+    <Compile Include="Views\MirWinPage.xaml.cs">
+      <DependentUpon>MirWinPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MafiaWinPage.xaml.cs">
+      <DependentUpon>MafiaWinPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewsModels\MafiaWinViewsModel.cs" />
+    <Compile Include="ViewsModels\MirWinViewsModel.cs" />
+    <Compile Include="Views\MirWinDeadPage.xaml.cs">
+      <DependentUpon>MirWinDeadPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MafiaWinDeadPage.xaml.cs">
+      <DependentUpon>MafiaWinDeadPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewsModels\MafiaWinDeadViewsModel.cs" />
+    <Compile Include="ViewsModels\MirWinDeadViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="WebSockets.PCL">
+      <HintPath>..\packages\Websockets.Pcl.1.1.9\lib\portable-net45+win+wpa81+wp80+MonoAndroid10+xamarinios10\WebSockets.PCL.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\portable-net45+win8+wpa81+wp8\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Core">
+      <HintPath>..\packages\Xamarin.Forms.2.3.4.247\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform">
+      <HintPath>..\packages\Xamarin.Forms.2.3.4.247\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml">
+      <HintPath>..\packages\Xamarin.Forms.2.3.4.247\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Images\day.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\" />
+    <Folder Include="Models\" />
+    <Folder Include="ViewsModels\" />
+    <Folder Include="DataServices\" />
+    <Folder Include="Images\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <Import Project="..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />
+</Project>

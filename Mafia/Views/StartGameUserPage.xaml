@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+				xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+				x:Class="Mafia.StartGameUserPage">
+	<ContentPage.Content>
+		<StackLayout  Margin="0,0,0,50">
+			<Label x:Name="RoomNameHere" 
+					TextColor="#e45931" 
+					FontFamily="akrobat.ttf#Akrobat"
+					FontSize="40" 
+					HorizontalTextAlignment="Center" 
+					Margin="0, 30, 0, 40"/>
+			<ListView ItemsSource="{Binding Logs}" VerticalOptions="FillAndExpand"></ListView>
+			<Button Text="Выход" 
+					Command="{Binding GoOut}" 
+					HorizontalOptions="Center" 
+					BackgroundColor="#e45931" 
+					TextColor="#ecd5bc"
+					FontFamily="akrobat.ttf#Akrobat"
+					FontSize="22"
+					WidthRequest="320"
+					HeightRequest="55"/>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

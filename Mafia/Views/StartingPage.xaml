@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="Mafia.StartingPage">
+	<ContentPage.Content>
+			<StackLayout  Margin="20,70,20,0" VerticalOptions="End">
+			<Button Text="Создать комнату" 
+					Command="{Binding CreateRoom}"
+					HorizontalOptions="Center" 
+					BackgroundColor="#e45931" 
+					TextColor="#ecd5bc"
+					FontFamily="akrobat.ttf#Akrobat"
+					FontSize="22"
+					WidthRequest="300"
+					HeightRequest="60"/>
+			
+			<Button Text="Присоединиться к комнате" 
+					Command="{Binding FindRoom}"  
+					HorizontalOptions="Center" 
+					BackgroundColor="#e45931" 
+					TextColor="#ecd5bc"
+					FontFamily="akrobat.ttf#Akrobat"
+					FontSize="22"
+					WidthRequest="300"
+					HeightRequest="60"
+					Margin="0, 0, 0, 50"/>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

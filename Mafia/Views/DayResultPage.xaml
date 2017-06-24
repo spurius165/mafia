@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="Mafia.DayResultPage">
+	<AbsoluteLayout VerticalOptions="FillAndExpand"
+                    HorizontalOptions="FillAndExpand">
+		<Image AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+            			Source="day.png" Aspect="AspectFill"/>
+		<ScrollView  AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0, 0, 1, 1">
+			<StackLayout Margin="0,40,0,0" VerticalOptions="Start">
+				<Label Text="УБИТ:" 
+					TextColor="#e45931" 
+					FontFamily="LineaturaRegular.ttf#Lineatura"
+					FontSize="28" 
+					HorizontalTextAlignment="Center" 
+					Margin="0, 0, 0, 40"/>
+				<Label x:Name="Dead" 
+					TextColor="#20242d" 
+					FontFamily="PFHandbookPro-Regular.ttf#PF Handbook Pro"
+					FontSize="26" 
+					HorizontalTextAlignment="Center" 
+					Margin="0, 0, 0, 0" />
+			</StackLayout>
+		</ScrollView>
+	</AbsoluteLayout>
+</ContentPage>
+

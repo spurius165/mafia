@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="Mafia.CardPage">
+	<ContentPage.Content>
+		<ScrollView>
+			<StackLayout Margin="25,0,25,0">
+				<Image x:Name="ImgRole" 
+						HorizontalOptions="Center" 
+						VerticalOptions="CenterAndExpand"
+						WidthRequest="600" 
+						Margin="0, 15, 0, 10"/>
+				<Button Text="Играть" 
+						Command="{Binding StartPlay}" 
+						HorizontalOptions="Center" 
+						BackgroundColor="#e45931" 
+						TextColor="#ecd5bc"
+						FontFamily="PFHandbookPro-Regular.ttf#PF Handbook Pro"
+						FontSize="24"
+						WidthRequest="280"
+						HeightRequest="60"
+						Margin="0, 0, 0, 20" />
+			</StackLayout>
+		</ScrollView>
+	</ContentPage.Content>
+</ContentPage>

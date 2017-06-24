@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="Mafia.MirWinDeadPage">
+	<ContentPage.Content>
+		<ScrollView>
+			<StackLayout Margin="0,40,0,0">
+				<Label Text="ТЫ УБИТ" 
+						TextColor="#e45931" 
+						FontFamily="LineaturaRegular.ttf#Lineatura"
+						FontSize="28" 
+						HorizontalTextAlignment="Center" 
+						Margin="0, 0, 0, 40"/>
+				<Label Text="МИРНЫЕ ЖИТЕЛИ ПОБЕДИЛИ!" 
+						TextColor="#20242d" 
+						FontFamily="PFHandbookPro-Regular.ttf#PF Handbook Pro"
+						FontSize="30" 
+						HorizontalTextAlignment="Center" 
+						Margin="0, 0, 0, 0" />
+				<Button Text="Меню" Command="{Binding Menu}" 
+						VerticalOptions="End"
+						HorizontalOptions="Center" 
+						BackgroundColor="#e45931" 
+						TextColor="#ecd5bc"
+						FontFamily="akrobat.ttf#Akrobat"
+						FontSize="24"
+						WidthRequest="220"
+						HeightRequest="60"
+						Margin="0, 320, 0, 30"/>
+			</StackLayout>
+		</ScrollView>
+	</ContentPage.Content>
+</ContentPage>
